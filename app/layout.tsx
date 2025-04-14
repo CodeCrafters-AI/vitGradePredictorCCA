@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} min-h-screen bg-background`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>{children} <Analytics /> <SpeedInsights/></ThemeProvider>
       </body>
     </html>
   )
